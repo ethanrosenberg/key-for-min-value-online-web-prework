@@ -3,8 +3,9 @@
 
 def key_for_min_value(name_hash)
   
-  return nil if name_hash == {} 
-  
+ if name_hash == {}
+   return nil
+ else 
   smallest = :chair
 
   name_hash.each do |key, value|
@@ -13,4 +14,6 @@ def key_for_min_value(name_hash)
     end
   end
   smallest
+  
+end
 end
